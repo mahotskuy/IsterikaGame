@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="IsterikaGameSiteDBModelStoreContainer" CdmEntityContainer="IsterikaGameSiteDBEntities">
+    <EntitySetMapping Name="Words">
+      <EntityTypeMapping TypeName="IsterikaGameSiteDBModel.Word">
+        <MappingFragment StoreEntitySet="Words">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Word1" ColumnName="Word" />
+          <ScalarProperty Name="SumOfTime" ColumnName="SumOfTime" />
+          <ScalarProperty Name="CallNumber" ColumnName="CallNumber" />
+          <ScalarProperty Name="Rating" ColumnName="Rating" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
