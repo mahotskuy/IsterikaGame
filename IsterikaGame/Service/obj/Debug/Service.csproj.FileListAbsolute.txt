@@ -14,3 +14,6 @@ C:\Users\Andrii\Documents\Visual Studio 2013\Projects\WebSite1\Service\obj\Debug
 C:\Users\Andrii\Documents\Visual Studio 2013\Projects\WebSite1\Service\obj\Debug\Service.Constant.CreatePlayersMessages.resources
 C:\Users\Andrii\Documents\Visual Studio 2013\Projects\WebSite1\Service\obj\Debug\Service.Constant.ErrorMessage.resources
 C:\Users\Andrii\Documents\Visual Studio 2013\Projects\WebSite1\Service\obj\Debug\Service.Constant.ShowRandomWords.resources
+C:\Users\Andrii\Documents\IsterikaGame\IsterikaGame\Service\bin\Debug\Service.exe.config
+C:\Users\Andrii\Documents\IsterikaGame\IsterikaGame\Service\obj\Debug\Service.exe
+C:\Users\Andrii\Documents\IsterikaGame\IsterikaGame\Service\obj\Debug\Service.pdb
