@@ -12,11 +12,16 @@ namespace IstericaGame
         Random rw = new Random();
         List<string> Words;
         List<Word> WordsFromDB;
-        static const int timerInms = 30000;
+        static int timerInms = 30000;
+        public List<Player>[] Commands { get; set;}
 
-        public ShowRandomWord(List<string> words)
+        public ShowRandomWord(List<string> words, List<Player>[] commands)
         { 
             Words=words;
+            Commands = commands;
+
+            InvokePlayer();
+            ShowResult();
         }
 
         public ShowRandomWord(List<Word> wordsFromDB)
@@ -36,9 +41,9 @@ namespace IstericaGame
 
         public void InvokePlayer()
         {
-            currentPlayerForCommand = new int[CreatePlayers.Commands.Length];
+            currentPlayerForCommand = new int[Commands.Length];
             t.Elapsed += ShowWhenTimeOccured;
-            Console.WriteLine(Message.WaitNextPlayer, CreatePlayers.Commands[currentCommand][currentPlayerForCommand[currentCommand]].ToString());
+            Console.WriteLine(Message.WaitNextPlayer, Commands[currentCommand][currentPlayerForCommand[currentCommand]].ToString());
             Console.ReadLine();
 
             ShowWord();
@@ -60,7 +65,7 @@ namespace IstericaGame
                 if (!IsTimerOccured)
                 {
                     Console.Beep();
-                    CreatePlayers.Commands[currentCommand][currentPlayerForCommand[currentCommand]].ActionOnWords.wordsWinsPlayers.Add(st);
+                    Commands[currentCommand][currentPlayerForCommand[currentCommand]].ActionOnWords.wordsWinsPlayers.Add(st);
                     Words.Remove(st);
                 }
             } t.Enabled = false;
@@ -71,10 +76,10 @@ namespace IstericaGame
             IsTimerOccured = true;
             Console.Clear();
             t.Enabled = false;
-            Math.DivRem(++currentPlayerForCommand[currentCommand], CreatePlayers.Commands[currentCommand].Count, out currentPlayerForCommand[currentCommand]);
-            Math.DivRem(++currentCommand, CreatePlayers.Commands.Length, out currentCommand);
+            Math.DivRem(++currentPlayerForCommand[currentCommand], Commands[currentCommand].Count, out currentPlayerForCommand[currentCommand]);
+            Math.DivRem(++currentCommand, Commands.Length, out currentCommand);
             Console.Beep(1000, 1500);
-            Console.WriteLine(Message.WaitNextPlayer, CreatePlayers.Commands[currentCommand][currentPlayerForCommand[currentCommand]].ToString());
+            Console.WriteLine(Message.WaitNextPlayer, Commands[currentCommand][currentPlayerForCommand[currentCommand]].ToString());
         }
 
        public void ShowResult()
@@ -83,10 +88,10 @@ namespace IstericaGame
             string WinerCommand=" ";
             int CurrentGoals;
             int MostGoals=0;
-            for (byte numOfCommand = 0; numOfCommand < CreatePlayers.Commands.Length; numOfCommand++)
+            for (byte numOfCommand = 0; numOfCommand < Commands.Length; numOfCommand++)
             {
                 CurrentGoals=0;
-                foreach (Player player in CreatePlayers.Commands[numOfCommand])
+                foreach (Player player in Commands[numOfCommand])
                 {
                     {
                         CurrentGoals += player.ActionOnWords.wordsWinsPlayers.Count;
@@ -100,10 +105,10 @@ namespace IstericaGame
             }
             Console.WriteLine(Message.ShowWiner, WinerCommand, MostGoals);
 
-            for (byte numOfCommand = 0; numOfCommand < CreatePlayers.Commands.Length; numOfCommand++)
+            for (byte numOfCommand = 0; numOfCommand < Commands.Length; numOfCommand++)
             {
                 Console.WriteLine(Message.ForShowingNameOfCommand,numOfCommand+1);
-                foreach (Player p in CreatePlayers.Commands[numOfCommand])
+                foreach (Player p in Commands[numOfCommand])
                 {
                     Console.WriteLine(Message.ShowHowManyWordExplainedByPlayer, p.ToString(), p.ActionOnWords.wordsWinsPlayers.Count);
                     result.Add(p.ActionOnWords.wordsWinsPlayers.Count);

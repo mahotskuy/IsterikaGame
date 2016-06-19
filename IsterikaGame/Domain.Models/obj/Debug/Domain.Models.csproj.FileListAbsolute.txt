@@ -8,3 +8,13 @@ C:\Users\Andrii\Documents\Visual Studio 2013\Projects\WebSite1\Domain.Models\bin
 C:\Users\Andrii\Documents\Visual Studio 2013\Projects\WebSite1\Domain.Models\obj\Debug\Domain.Models.csprojResolveAssemblyReference.cache
 C:\Users\Andrii\Documents\Visual Studio 2013\Projects\WebSite1\Domain.Models\obj\Debug\Domain.Models.exe
 C:\Users\Andrii\Documents\Visual Studio 2013\Projects\WebSite1\Domain.Models\obj\Debug\Domain.Models.pdb
+C:\Users\Andrii\Documents\IsterikaGame\IsterikaGame\Domain.Models\bin\Debug\Domain.Models.exe.config
+C:\Users\Andrii\Documents\IsterikaGame\IsterikaGame\Domain.Models\bin\Debug\Domain.Models.exe
+C:\Users\Andrii\Documents\IsterikaGame\IsterikaGame\Domain.Models\bin\Debug\Domain.Models.pdb
+C:\Users\Andrii\Documents\IsterikaGame\IsterikaGame\Domain.Models\bin\Debug\EntityFramework.dll
+C:\Users\Andrii\Documents\IsterikaGame\IsterikaGame\Domain.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Andrii\Documents\IsterikaGame\IsterikaGame\Domain.Models\bin\Debug\EntityFramework.xml
+C:\Users\Andrii\Documents\IsterikaGame\IsterikaGame\Domain.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Andrii\Documents\IsterikaGame\IsterikaGame\Domain.Models\obj\Debug\Domain.Models.csprojResolveAssemblyReference.cache
+C:\Users\Andrii\Documents\IsterikaGame\IsterikaGame\Domain.Models\obj\Debug\Domain.Models.exe
+C:\Users\Andrii\Documents\IsterikaGame\IsterikaGame\Domain.Models\obj\Debug\Domain.Models.pdb

@@ -9,15 +9,23 @@ namespace IstericaGame
 {
     class CreatePlayers
     {
-        protected List<Player>[] commands;
+        protected List<Player>[] _commands;
+
         protected int QuontityOfCommands = 0;
 
-        public static List<Player>[] Commands { get; }
+        public List<Player>[] Commands { get { return _commands; } }
+
+        public CreatePlayers() 
+        {
+            CreatePlayerList();
+
+            ShowPlayers();
+        }
 
         protected void InitialCommands()
         {
-            for (byte numOfCommand = 0; numOfCommand < commands.Length; numOfCommand++)
-                commands[numOfCommand] = new List<Player>();
+            for (byte numOfCommand = 0; numOfCommand < _commands.Length; numOfCommand++)
+                _commands[numOfCommand] = new List<Player>();
         }
 
         public void CreatePlayerList()
@@ -32,7 +40,7 @@ namespace IstericaGame
                 PlayerName = Console.ReadLine();
                 if (ActionsOnWords.IsWordCorrent(PlayerName) && PlayerName.Equals(Message.SingOfEndOfTypingInCycle, StringComparison.OrdinalIgnoreCase) != true)
                 {
-                    commands[currentCommand].Add(new Player(PlayerName));
+                    _commands[currentCommand].Add(new Player(PlayerName));
                 }
                 if (PlayerName.Equals(Message.SingOfEndOfTypingInCycle, StringComparison.OrdinalIgnoreCase))
                 {
@@ -53,7 +61,7 @@ namespace IstericaGame
                 {
                     Console.WriteLine(Message.WriteNumOfCommand);
                     QuontityOfCommands = Convert.ToInt16(Console.ReadLine());
-                    commands = new List<Player>[QuontityOfCommands];
+                    _commands = new List<Player>[QuontityOfCommands];
                 }
                 catch (FormatException e)
                 {
@@ -124,9 +132,9 @@ namespace IstericaGame
         public void FillWordsAnyPlayers()
         {
             WriteNumberOfWords();
-            for (byte i = 0; i < commands.Length;i++ )
+            for (byte i = 0; i < _commands.Length;i++ )
             {
-                foreach (Player pl in commands[i])
+                foreach (Player pl in _commands[i])
                 {
                     Console.Clear();
                     Console.WriteLine(Message.InstructionForFillWords, pl.ToString());
@@ -139,11 +147,11 @@ namespace IstericaGame
         public void ShowPlayers()
         {
             byte b = 0;
-            for (int numCommand = 0; numCommand < commands.Length;numCommand++ )
+            for (int numCommand = 0; numCommand < _commands.Length;numCommand++ )
             {
                 Console.WriteLine(Message.ForDisplayCommandName, numCommand);
                 Console.WriteLine(Message.ForDisplayNameOfPlayers);
-                foreach (Player player in commands[numCommand])
+                foreach (Player player in _commands[numCommand])
                 {
                     player.ShowPlayerName();
                 }

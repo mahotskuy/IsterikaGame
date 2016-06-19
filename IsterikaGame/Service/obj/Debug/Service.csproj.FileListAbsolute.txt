@@ -17,3 +17,16 @@ C:\Users\Andrii\Documents\Visual Studio 2013\Projects\WebSite1\Service\obj\Debug
 C:\Users\Andrii\Documents\IsterikaGame\IsterikaGame\Service\bin\Debug\Service.exe.config
 C:\Users\Andrii\Documents\IsterikaGame\IsterikaGame\Service\obj\Debug\Service.exe
 C:\Users\Andrii\Documents\IsterikaGame\IsterikaGame\Service\obj\Debug\Service.pdb
+C:\Users\Andrii\Documents\IsterikaGame\IsterikaGame\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
+C:\Users\Andrii\Documents\IsterikaGame\IsterikaGame\Service\obj\Debug\Service.Constant.CreatePlayersMessages.resources
+C:\Users\Andrii\Documents\IsterikaGame\IsterikaGame\Service\obj\Debug\Service.Constant.ErrorMessage.resources
+C:\Users\Andrii\Documents\IsterikaGame\IsterikaGame\Service\obj\Debug\Service.Constant.ShowRandomWords.resources
+C:\Users\Andrii\Documents\IsterikaGame\IsterikaGame\Service\obj\Debug\Service.csproj.GenerateResource.Cache
+C:\Users\Andrii\Documents\IsterikaGame\IsterikaGame\Service\bin\Debug\Service.exe
+C:\Users\Andrii\Documents\IsterikaGame\IsterikaGame\Service\bin\Debug\Service.pdb
+C:\Users\Andrii\Documents\IsterikaGame\IsterikaGame\Service\bin\Debug\Domain.Models.exe
+C:\Users\Andrii\Documents\IsterikaGame\IsterikaGame\Service\bin\Debug\EntityFramework.dll
+C:\Users\Andrii\Documents\IsterikaGame\IsterikaGame\Service\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Andrii\Documents\IsterikaGame\IsterikaGame\Service\bin\Debug\Domain.Models.pdb
+C:\Users\Andrii\Documents\IsterikaGame\IsterikaGame\Service\bin\Debug\EntityFramework.xml
+C:\Users\Andrii\Documents\IsterikaGame\IsterikaGame\Service\bin\Debug\EntityFramework.SqlServer.xml

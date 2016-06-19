@@ -14,7 +14,7 @@ namespace IstericaGame
         {
             get
             {
-                return wordTogether; 
+                return wordTogether;
             }
 
         }
@@ -46,37 +46,29 @@ namespace IstericaGame
         public void GetAllWordsFromDB(List<Player>[] commands)
         {
             List<int> idOfWords = new List<int>();
-            Word word;
             CreatePlayers.WriteNumberOfWords();
 
             using (var _db = new IsterikaGameDBEntities())
             {
-                int countOfWordInDb=_db.Words.Count();
+                int countOfWordInDb = _db.Words.Count();
                 for (byte i = 0; i < commands.Length; i++)
                 {
                     for (byte j = 0; j < commands[i].Count(); j++)
                     {
                         for (byte y = 0; y < CreatePlayers.NumberOfWordsByPlayer; y++)
                         {
-                            idOfWords.Add(random.Next(0,countOfWordInDb));
+                            idOfWords.Add(random.Next(0, countOfWordInDb));
                         }
                     }
                 }
-                for (int i = 0; i < idOfWords.Count; i++)
-                {
-                    word = _db.Words.Where(r => idOfWords.Contains(r.id)).First();
-                    if (word != null)
-                    {
-                       wordsFromDB.Add(word);
-                    }
-                    else
-                    {
-                        //Log Error in future
-                        throw new NotImplementedException();
-                    }
-                }
+
+                var words = from w in _db.Words
+                                where idOfWords.Contains(w.id)
+                                select w;
+
+                wordsFromDB = words.ToList();
             }
- 
+
         }
 
     }

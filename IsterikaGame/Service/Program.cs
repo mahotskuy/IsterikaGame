@@ -12,22 +12,18 @@ namespace IstericaGame
         {
             CreatePlayers cp = new CreatePlayers();
             WordsTogater wt = new WordsTogater();
-            ShowRandomWord srw;
-            cp.CreatePlayerList();
-            cp.ShowPlayers();
+
             if (cp.IsChooseFromDataBase())
             {
-                wt.GetAllWordsFromDB(cp.commands);
-                 srw= new ShowRandomWord(wt.WordsFromDB);
+                wt.GetAllWordsFromDB(cp.Commands);
+                ShowRandomWord srw = new ShowRandomWord(wt.WordsFromDB.Select(w=>w.Word1).ToList(), cp.Commands);
             }
             else
             {
                 cp.FillWordsAnyPlayers();
-                wt.PlayersTogether(cp.commands);
-                 srw = new ShowRandomWord(wt.ListOfWords);
+                wt.PlayersTogether(cp.Commands);
+                ShowRandomWord srw = new ShowRandomWord(wt.ListOfWords, cp.Commands);
             }
-            srw.InvokePlayer(cp);
-            srw.ShowResult();
             System.Threading.Thread.Sleep(5000);
             Console.ReadLine();
         }
