@@ -2,4 +2,6 @@ Here Is change is master branch.
 
 This change which I will push to master and another branch.
 
-Some second change in master.
+Some second change in Develop.
+
+Understand that it was not a master;
