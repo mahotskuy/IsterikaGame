@@ -12,6 +12,13 @@ Second change in Feature
 
 Thread change in Feature;
 
+Thread change in Feature;
+
 Some change after merge into develop and some change
 
 Add new change after create new branch in Feature;
+Someone add new change;
+
+New change;
+
+First change in new branch;

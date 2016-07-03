@@ -1,19 +1,25 @@
 Here Is change is master branch.
 
-<<<<<<< HEAD
 This change which I will push to master and another branch.
+
+New change in develop
 
 Some second change in Develop.
 
 Understand that it was not a master;
-=======
-This change which I will push to master and anather branch.
-
-
-
-New change in develop
 
 Second change in Feature
 
 Thread change in Feature;
->>>>>>> develop
+
+<<<<<<< HEAD
+Some change after merge into develop and some change
+
+Add new change after create new branch in Feature;
+=======
+Someone add new change;
+
+New change;
+
+First change in new branch;
+>>>>>>> Try_work_in_separete_Branch
