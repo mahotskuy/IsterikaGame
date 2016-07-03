@@ -9,3 +9,5 @@ New change in develop
 Second change in Feature
 
 Thread change in Feature;
+
+Someone add new change;
