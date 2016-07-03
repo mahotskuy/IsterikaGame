@@ -2,12 +2,14 @@ Here Is change is master branch.
 
 This change which I will push to master and another branch.
 
+New change in develop
+
 Some second change in Develop.
 
 Understand that it was not a master;
 
-New change in develop
-
 Second change in Feature
 
 Thread change in Feature;
+
+Some change after merge into develop and some change
