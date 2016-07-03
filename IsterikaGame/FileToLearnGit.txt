@@ -11,3 +11,5 @@ Second change in Feature
 Thread change in Feature;
 
 Someone add new change;
+
+New change;
