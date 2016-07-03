@@ -13,3 +13,5 @@ Thread change in Feature;
 Someone add new change;
 
 New change;
+
+First change in new branch;
