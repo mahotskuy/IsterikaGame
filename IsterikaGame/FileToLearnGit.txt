@@ -15,3 +15,5 @@ Someone add new change;
 New change;
 
 Some change after create new branch;
+
+There I make commit and after I reset it.
