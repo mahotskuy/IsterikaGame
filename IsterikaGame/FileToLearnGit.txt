@@ -1,16 +1,26 @@
 Here Is change is master branch.
 
-This change which I will push to master and anather branch.
+This change which I will push to master and another branch.
 
 There is going work
 Change to merge
-
-
 New change in develop
+
+Some second change in Develop.
+
+Understand that it was not a master;
 
 Second change in Feature
 
 Thread change in Feature;
+
+Thread change in Feature;
+
+Some change after merge into develop and some change
+
+Add new change after create new branch in Feature;
+
+There change from Feature
 
 Someone add new change;
 
@@ -20,4 +30,9 @@ Some change after create new branch;
 
 There I make commit and after I reset it.
 
-Some new
+Some newNew change;
+
+First change in new branch;
+
+
+Change When Finish Feature 
