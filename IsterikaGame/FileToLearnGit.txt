@@ -26,6 +26,8 @@ Someone add new change;
 
 New change;
 
+There we Fix someThing when someone work on branch
+
 Rebase change
 
 rebase change 2
